@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Verdant Studio - Cart</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e0e3e1",
+                        "tertiary-fixed": "#fcfeb9",
+                        "inverse-on-surface": "#9c9d9c",
+                        "on-tertiary-fixed": "#4d501d",
+                        "surface-dim": "#d7dbd8",
+                        "primary-dim": "#096119",
+                        "error-container": "#fd795a",
+                        "secondary-fixed": "#ffdbcf",
+                        "surface-container-high": "#e6e9e6",
+                        "outline-variant": "#afb3b0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#5c605e",
+                        "on-primary-fixed": "#00460e",
+                        "surface-tint": "#1c6d25",
+                        "on-surface": "#2f3332",
+                        "on-background": "#2f3332",
+                        "on-secondary-container": "#6c493d",
+                        "inverse-primary": "#9df197",
+                        "tertiary-dim": "#545622",
+                        "on-primary-fixed-variant": "#12661e",
+                        "tertiary-fixed-dim": "#edefac",
+                        "on-secondary-fixed": "#57382c",
+                        "error": "#a73b21",
+                        "background": "#f9f9f7",
+                        "primary-fixed": "#9df197",
+                        "surface-container-highest": "#e0e3e1",
+                        "on-tertiary-container": "#60622d",
+                        "primary-fixed-dim": "#90e28a",
+                        "on-error": "#fff7f6",
+                        "surface-container-low": "#f3f4f2",
+                        "secondary-dim": "#6d4b3e",
+                        "surface-container": "#eceeec",
+                        "secondary-container": "#ffdbcf",
+                        "secondary-fixed-dim": "#facab9",
+                        "on-error-container": "#6e1400",
+                        "secondary": "#7b5749",
+                        "primary-container": "#9df197",
+                        "primary": "#1c6d25",
+                        "on-primary": "#eaffe2",
+                        "on-primary-container": "#005c15",
+                        "surface-bright": "#f9f9f7",
+                        "inverse-surface": "#0c0f0e",
+                        "tertiary-container": "#fcfeb9",
+                        "on-secondary-fixed-variant": "#775346",
+                        "error-dim": "#791903",
+                        "surface": "#f9f9f7",
+                        "tertiary": "#60622d",
+                        "outline": "#777c79",
+                        "on-tertiary": "#fbfdb9",
+                        "on-tertiary-fixed-variant": "#6a6d37",
+                        "on-secondary": "#fff7f5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9f7]/80 backdrop-blur-md hidden md:flex items-center justify-between px-6 py-4 w-full">
+<button aria-label="Go back" class="text-[#1c6d25] p-2 rounded-full hover:bg-[#e6e9e6] transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline tracking-tight text-xl font-bold text-[#1c6d25]">Basket</h1>
+<button aria-label="Eco settings" class="text-[#1c6d25] p-2 rounded-full hover:bg-[#e6e9e6] transition-colors">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+</button>
+</header>
+<!-- Mobile Top Header (if needed, though hidden on md per instruction, we use same structure) -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9f7]/80 backdrop-blur-md md:hidden flex items-center justify-between px-6 py-4 w-full">
+<button aria-label="Go back" class="text-[#1c6d25] p-2 rounded-full hover:bg-[#e6e9e6] transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline tracking-tight text-xl font-bold text-[#1c6d25]">Basket</h1>
+<button aria-label="Eco settings" class="text-[#1c6d25] p-2 rounded-full hover:bg-[#e6e9e6] transition-colors">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-24 pb-32 md:pb-24 px-6 md:px-12 max-w-4xl mx-auto w-full flex flex-col gap-8">
+<!-- Cart Items List -->
+<section aria-label="Cart Items" class="flex flex-col gap-6">
+<!-- Item 1 -->
+<article class="flex gap-6 items-start bg-surface-container-lowest p-4 rounded-xl relative shadow-[0_8px_32px_rgba(28,109,37,0.02)]">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container-low">
+<img alt="Heirloom Carrots" class="w-full h-full object-cover object-center" data-alt="bunch of vibrant organic heirloom carrots in various colors purple orange yellow on rustic wooden table soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf42A7QFfNT8oAUXzjDQ8uDcU4d46lJ3hPin5N0YrRYIIRO1xc0wYXjbu2XYQV3TOlGRlKeQSokGSiQKRG7WwJy02H7wYp3rKGvhVnSXdASNP3R9vyF-WIVoOUxJ4srwznuylodGbb_UdibDhrBD6kN1JIrbPMNlxACmj71U8aRI-shaGQIgAkTRkWeOPdBIKvKIdmIDtgPCj2NwIHxiV06gMo1L03YU-36HhEqwV0vr9JVzycAQo5M9uIwQF8MQjfRRXkHjrZyFkV"/>
+</div>
+<div class="flex-grow flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-headline text-lg font-semibold text-on-surface">Heirloom Carrots</h2>
+<p class="font-body text-sm text-on-surface-variant mt-0.5">1/2 kg • Paper Bag (+$0.50)</p>
+</div>
+<span class="font-headline text-lg font-medium text-on-surface">$4.50</span>
+</div>
+<div class="flex justify-between items-end mt-2">
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-3 py-1">
+<button aria-label="Decrease quantity" class="text-on-surface-variant hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]" data-icon="remove">remove</span>
+</button>
+<span class="font-body text-sm font-medium w-4 text-center">1</span>
+<button aria-label="Increase quantity" class="text-on-surface-variant hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]" data-icon="add">add</span>
+</button>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-2">
+<span class="material-symbols-outlined" data-icon="delete_outline">delete_outline</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 2 -->
+<article class="flex gap-6 items-start bg-surface-container-lowest p-4 rounded-xl relative shadow-[0_8px_32px_rgba(28,109,37,0.02)]">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container-low">
+<img alt="Cherry Tomatoes" class="w-full h-full object-cover object-center" data-alt="cluster of bright red organic cherry tomatoes on the vine natural sunlight high contrast deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUmMU5ZOy5fdkGXhcQHErCDFGdDQJUObJJIxsoRFUKoy4kf-evMssZcMIOpE1DyCp3R6NTOulZsgpeyoE1iwNzrIvNQOyp6a52sy0zBJchICBh-2RBOoKBRYelTj-9jMACzncYdWpsV7ShEvqFWDFLNPBOOiIAgTYADfblpXPW7-cRSuKD4--OSHhZU3UZxuyDtrbm000LonhAgupOYGY8by3kpB_HbWEHdzPc69-zsJCOEciq2Dxt9A1GLi6tun58Ec7osWvHnr0i"/>
+</div>
+<div class="flex-grow flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-headline text-lg font-semibold text-on-surface">Cherry Tomatoes</h2>
+<p class="font-body text-sm text-on-surface-variant mt-0.5">250g • Mesh Bag</p>
+</div>
+<span class="font-headline text-lg font-medium text-on-surface">$3.20</span>
+</div>
+<div class="flex justify-between items-end mt-2">
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-3 py-1">
+<button aria-label="Decrease quantity" class="text-on-surface-variant hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]" data-icon="remove">remove</span>
+</button>
+<span class="font-body text-sm font-medium w-4 text-center">2</span>
+<button aria-label="Increase quantity" class="text-on-surface-variant hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]" data-icon="add">add</span>
+</button>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-2">
+<span class="material-symbols-outlined" data-icon="delete_outline">delete_outline</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 3 -->
+<article class="flex gap-6 items-start bg-surface-container-lowest p-4 rounded-xl relative shadow-[0_8px_32px_rgba(28,109,37,0.02)]">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 bg-surface-container-low">
+<img alt="Baby Spinach" class="w-full h-full object-cover object-center" data-alt="fresh vibrant green organic baby spinach leaves spilling out of a rustic paper bag soft airy lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeBG6V3EZWPBB-WdGz8j1Xln2ioybzDjakme4QHJe3pG9lG2KhHhuuAZ_WGCi-ikgUajPG8bdWoE_cwQoSGPa3iptEWjl6UjExuAq9hD7tOSoJLLVlQZ_T7E7wFYbHGrwyDSHl7NEbN_EDiV1_S9FbBFhDq7JvbPS8svO0zFN2QTbt8DEp_sPqI1kRpjOlj8zfIplbQG6rT1BrnDuWkWZgtN9uvu0SxactD9zTwbKoS1bnnDWUtc5JcSjma2koLs3aU9Pas9KCFQaw"/>
+</div>
+<div class="flex-grow flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-headline text-lg font-semibold text-on-surface">Baby Spinach</h2>
+<p class="font-body text-sm text-on-surface-variant mt-0.5">200g • No Packaging</p>
+</div>
+<span class="font-headline text-lg font-medium text-on-surface">$2.80</span>
+</div>
+<div class="flex justify-between items-end mt-2">
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-3 py-1">
+<button aria-label="Decrease quantity" class="text-on-surface-variant hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]" data-icon="remove">remove</span>
+</button>
+<span class="font-body text-sm font-medium w-4 text-center">1</span>
+<button aria-label="Increase quantity" class="text-on-surface-variant hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]" data-icon="add">add</span>
+</button>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-2">
+<span class="material-symbols-outlined" data-icon="delete_outline">delete_outline</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Summary Section -->
+<section class="mt-8 bg-surface-container-low p-6 rounded-xl relative shadow-[0_8px_32px_rgba(28,109,37,0.04)]">
+<h3 class="font-headline text-lg font-semibold text-on-surface mb-6">Order Summary</h3>
+<div class="flex flex-col gap-4 font-body text-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal</span>
+<span class="text-on-surface">$10.50</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Packaging Fees</span>
+<span class="text-on-surface">$0.50</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Delivery</span>
+<span class="text-on-surface">Free</span>
+</div>
+<div class="h-px bg-outline-variant/15 my-2"></div>
+<div class="flex justify-between items-end">
+<span class="font-headline text-base font-semibold text-on-surface">Total</span>
+<span class="font-headline text-2xl font-bold text-primary tracking-tight">$11.00</span>
+</div>
+</div>
+<button class="w-full mt-8 bg-primary text-on-primary font-headline font-semibold py-4 rounded-full hover:opacity-90 transition-opacity bg-gradient-to-br from-primary to-primary-dim shadow-[0_8px_32px_rgba(28,109,37,0.15)] flex items-center justify-center gap-2">
+                Checkout
+                <span class="material-symbols-outlined text-[20px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-[24px] bg-[#ffffff] border-t border-[#afb3b0]/15 shadow-[0_-8px_32px_rgba(28,109,37,0.06)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-2 pb-6">
+<a class="flex flex-col items-center justify-center text-[#5c615a] px-4 py-2 hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="potted_plant">potted_plant</span>
+<span class="font-['Manrope'] text-[11px] font-medium">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#5c615a] px-4 py-2 hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="wb_sunny">wb_sunny</span>
+<span class="font-['Manrope'] text-[11px] font-medium">Seasonal</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#eaffe2] text-[#1c6d25] rounded-2xl px-4 py-2 hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="shopping_basket" data-weight="fill" style="font-variation-settings: 'FILL' 1;">shopping_basket</span>
+<span class="font-['Manrope'] text-[11px] font-medium">Basket</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#5c615a] px-4 py-2 hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Manrope'] text-[11px] font-medium">Account</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Organic Editorial | Harvested for You</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-container-low": "#f3f4f2",
+                "on-primary-fixed-variant": "#12661e",
+                "surface-container": "#eceeec",
+                "tertiary-fixed": "#fcfeb9",
+                "inverse-surface": "#0c0f0e",
+                "surface-container-highest": "#e0e3e1",
+                "surface-tint": "#1c6d25",
+                "primary-container": "#9df197",
+                "tertiary-container": "#fcfeb9",
+                "surface-container-lowest": "#ffffff",
+                "tertiary": "#60622d",
+                "on-surface": "#2f3332",
+                "surface-container-high": "#e6e9e6",
+                "error": "#a73b21",
+                "tertiary-dim": "#545622",
+                "secondary-container": "#ffdbcf",
+                "tertiary-fixed-dim": "#edefac",
+                "on-primary-fixed": "#00460e",
+                "on-tertiary": "#fbfdb9",
+                "on-tertiary-fixed": "#4d501d",
+                "on-secondary": "#fff7f5",
+                "on-secondary-fixed-variant": "#775346",
+                "outline-variant": "#afb3b0",
+                "inverse-on-surface": "#9c9d9c",
+                "primary-dim": "#096119",
+                "secondary-fixed-dim": "#facab9",
+                "surface": "#f9f9f7",
+                "on-primary": "#eaffe2",
+                "primary-fixed": "#9df197",
+                "error-container": "#fd795a",
+                "on-primary-container": "#005c15",
+                "on-secondary-fixed": "#57382c",
+                "surface-variant": "#e0e3e1",
+                "background": "#f9f9f7",
+                "on-tertiary-container": "#60622d",
+                "primary-fixed-dim": "#90e28a",
+                "on-background": "#2f3332",
+                "on-error-container": "#6e1400",
+                "outline": "#777c79",
+                "on-secondary-container": "#6c493d",
+                "error-dim": "#791903",
+                "secondary-fixed": "#ffdbcf",
+                "on-tertiary-fixed-variant": "#6a6d37",
+                "surface-dim": "#d7dbd8",
+                "on-error": "#fff7f6",
+                "on-surface-variant": "#5c605e",
+                "inverse-primary": "#9df197",
+                "secondary-dim": "#6d4b3e",
+                "primary": "#1c6d25",
+                "secondary": "#7b5749",
+                "surface-bright": "#f9f9f7"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f9f9f7; color: #2f3332; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<header class="fixed top-0 w-full z-50 bg-[#f9f9f7]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#1c6d25] hover:opacity-80 transition-opacity active:scale-95 active:duration-150 cursor-pointer">menu</span>
+</div>
+<h1 class="font-['Plus_Jakarta_Sans'] text-2xl font-bold tracking-tight text-[#1c6d25]">The Organic Editorial</h1>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#1c6d25] hover:opacity-80 transition-opacity active:scale-95 active:duration-150 cursor-pointer">shopping_bag</span>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-screen-xl mx-auto">
+<section class="mb-10">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline">search</span>
+</div>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-container-highest rounded-xl border-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all placeholder:text-outline font-body" placeholder="Search for heirloom seeds, fresh herbs..." type="text"/>
+</div>
+</section>
+<section class="mb-12">
+<div class="flex gap-4 flex-wrap gap-y-3">
+<button class="flex-shrink-0 px-6 py-3 rounded-full bg-primary text-on-primary font-label text-sm font-semibold tracking-wide shadow-[0_-4px_32px_rgba(28,109,37,0.06)]">Leafy Greens</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-label text-sm font-semibold tracking-wide hover:bg-surface-container transition-colors">Root Vegetables</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-label text-sm font-semibold tracking-wide hover:bg-surface-container transition-colors">Aromatic Herbs</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-label text-sm font-semibold tracking-wide hover:bg-surface-container transition-colors">Orchard Fruits</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-label text-sm font-semibold tracking-wide hover:bg-surface-container transition-colors">Fungi</button>
+</div>
+</section>
+<section class="mb-16">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="font-headline text-3xl font-extrabold tracking-tight text-primary">Daily Fresh</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Directly from the farm to your table</p>
+</div>
+</div>
+<div class="mb-6 relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-sm">search</span>
+</div>
+<input class="w-full h-10 pl-10 pr-4 bg-surface-container-highest rounded-lg border-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all placeholder:text-outline font-body text-sm" placeholder="Search in Daily Fresh..." type="text"/>
+</div><div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+
+<div class="group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of vibrant orange carrots with fresh green tops against a minimalist neutral grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASyPMzsOTIsSQESicap7TELr1OKhD3B-5src5jpqgnmGkJu4OGWwfrZV-ixHykCi6cSKj55NyoZZYGwmIO-kYqaTm2at3Gn6RclDGwlazKbQXFNRLhg-YigPlnW66iRBwBUeFSM4eJP2-XcFoWOuVJOhRufOl3fpH67NEjSEsybmP1AjYfiZQVcZY0TQMQYGvTyvelyG4KaFYtB64wTKRZFwTSZIFBGpk2OzIWVRUoV2vkTObPgNRqTr6TksO3MenzUvPaPOdwBGw9"/>
+<button class="absolute bottom-3 right-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform" onclick="event.stopPropagation();">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+<div class="absolute top-3 left-3 px-2 py-1 bg-tertiary-container text-on-tertiary-container text-[9px] font-bold uppercase tracking-widest rounded-sm">Harvested Yesterday</div>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-lg">Organic Heirloom Carrots</h4>
+<p class="font-body text-on-surface-variant text-xs mb-2">500g Bunch</p>
+<div class="flex justify-between items-center">
+<span class="font-headline font-extrabold text-primary">$4.50</span>
+</div>
+</div>
+</div>
+
+<div class="group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Fresh purple radishes with delicate stems on a white stone surface with soft ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNBALWzWQjTC8B8eQcdBJB3h2Hn7pD9dp7bOySOeebD0ellROZMOLEzrvIJRjwvHtKbRmLpNEPHoLkbkb67IAVf-ol4RjHVKIDeu2HVDKlWeH7YDPmBCCPfToZyUiuzT2ylgyij7Qm11-7qge7WbBBPr9Ip0yWdIrpiXpGzBcWRPV4cXO2VgX7HmDL0iiRRdf1GOS6FxqUFte80GQnzbhoCPfp-DPFeqCY0SVh3ei5ydC8PusDnGEt6YcIJ6xXNUCHQiCPPDCCx9u1"/>
+<button class="absolute bottom-3 right-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform" onclick="event.stopPropagation();">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-lg">Ruby Radish Bunch</h4>
+<p class="font-body text-on-surface-variant text-xs mb-2">250g Pack</p>
+<div class="flex justify-between items-center">
+<span class="font-headline font-extrabold text-primary">$3.25</span>
+</div>
+</div>
+</div>
+
+<div class="group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Tender baby spinach leaves in a white ceramic bowl under soft natural window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxop-qj-uOZx688Mn-q_rkNhKEp_CM9oaCnmxyAg04lmzLITxK8ai4hhc8fGz-aRiYFGDkHDNAvNu0mBh7TSfiSkKFSeHbaTkLsg_CAvMK7Tiw_ERCgHoJ8sSPTFOPqE3u-_O52nOP-v4-iaRUwFlqq0tcLo-HwPLUrpXTAImYVBY579GdvnNBa2v3d0wBJd40TUNss0d3PNW8QdprTKz770ojU71cIb47Y95-HXN95zdGwrtpN0e7-xQ4J-uD_MgoozgSICtGc0OO"/>
+<button class="absolute bottom-3 right-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform" onclick="event.stopPropagation();">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-lg">Baby Spinach</h4>
+<p class="font-body text-on-surface-variant text-xs mb-2">200g Box</p>
+<div class="flex justify-between items-center">
+<span class="font-headline font-extrabold text-primary">$5.00</span>
+</div>
+</div>
+</div>
+
+<div class="group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Assorted wild mushrooms in a woven basket with earthy forest textures and dramatic moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrvZ-QRasyiXfvam_IUZe51peVqDu0PMhvJiJJErgOechhZVeNqABA82i8F6_IC62NGV_8nJEAoVkX5zk05wtns6DaR7nilo7chQOWlI1YK_tWid1i0xJfae7SY8IU1cZFfU6dMBFdrXWcKn9ZP-GdEgfM55tmrga-UBCOiz7z4z8uKUqQlLYBwDA8YKCLjwU1kqvLdRvSYkgVADnexc2HKc2l_qmFKSeleDfBkUrjVXfGwgrVPT3DZJp_ZTKIouGOFqnMW8c5AW-d"/>
+<button class="absolute bottom-3 right-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform" onclick="event.stopPropagation();">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+<div class="absolute top-3 left-3 px-2 py-1 bg-tertiary-container text-on-tertiary-container text-[9px] font-bold uppercase tracking-widest rounded-sm">Forest Foraged</div>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-lg">Wild Mushroom Mix</h4>
+<p class="font-body text-on-surface-variant text-xs mb-2">150g Punnet</p>
+<div class="flex justify-between items-center">
+<span class="font-headline font-extrabold text-primary">$8.95</span>
+</div>
+</div>
+</div>
+
+</div>
+<div class="mt-8 flex justify-center">
+<button class="px-6 py-3 rounded-full border border-outline-variant text-on-surface-variant font-label text-sm font-semibold tracking-wide hover:bg-surface-container transition-colors">Load more</button>
+</div>
+</section>
+<section class="mb-16">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="font-headline text-3xl font-extrabold tracking-tight text-primary">Seasonal Fruits</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Sun-ripened and hand-picked</p>
+</div>
+</div>
+<div class="mb-6 relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-sm">search</span>
+</div>
+<input class="w-full h-10 pl-10 pr-4 bg-surface-container-highest rounded-lg border-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all placeholder:text-outline font-body text-sm" placeholder="Search in Seasonal Fruits..." type="text"/>
+</div><div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+
+<div class="group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Fresh organic strawberries in a bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAVZVd0BQokwRqBd6WSrwTgVG4kr0JKBlGfJBIvVLmS95tkcr6PpovTb7MJrArd0Qig8yUSQqr_eOkDuj-2GMnzWBu8cNZnUulOEdyleACNPHo_PTtBQP-93lDA8w14o2jeT0hzogdVlDNrqpfa8v7MwCSBVMIpn_D6kkpWZtrJbpGmGbWUnhBSpWAikEKcYr85q-RPPsk-3d9yKYjPzpN2IA37nQPDbSJ4SpbCrFsSfBmWrwzRFcDj3iQXSj7KqzNb8sILbsT7k4_"/>
+<button class="absolute bottom-3 right-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform" onclick="event.stopPropagation();">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+<div class="absolute top-3 left-3 px-2 py-1 bg-tertiary-container text-on-tertiary-container text-[9px] font-bold uppercase tracking-widest rounded-sm">Summer Sweet</div>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-lg">Organic Strawberries</h4>
+<p class="font-body text-on-surface-variant text-xs mb-2">250g Punnet</p>
+<div class="flex justify-between items-center">
+<span class="font-headline font-extrabold text-primary">$6.50</span>
+</div>
+</div>
+</div>
+
+<div class="group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Fresh blueberries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtPo-2L6Ax4mKf5dFhGrecA3WKM93PMjiXehdTW0VNNS5d5xjQzKs_XsK8udDWarfG-pW1S-BD_sykq6Im-l_p0Pn9zQIL9BrOZx3dR2aoIf7CTWcKEfHd6tL2KDGJi0A8xFFWBxkbhM8blL3t0hS0uY0Ap2cUlJ8k9n7da-Y2NZ3nZIkGzTYuibWzKgpUyH9N8kvA9qi6LTn21rsJxkgHMZZqOkPBJozFKpPG8xldGwHR-ax_iE2ZNKF6bVVayi9dnyijU_GpS-7b"/>
+<button class="absolute bottom-3 right-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform" onclick="event.stopPropagation();">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-lg">Fresh Blueberries</h4>
+<p class="font-body text-on-surface-variant text-xs mb-2">125g Punnet</p>
+<div class="flex justify-between items-center">
+<span class="font-headline font-extrabold text-primary">$5.50</span>
+</div>
+</div>
+</div>
+
+<div class="group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Sweet peaches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj3OOhnJm_YepLCUZo8OIRYbAFvApH5oaWMS34W5jf2LFi7lA3xVdO13l7LVKI1JdvQv5yau7kCu2kqUhkTLjWQKd0XDlszVZYH_aP613ZrTtN61-105dti_QZQUK6LVHknb7oHbVUV1-8q8R4n7qQjQ_hnWCDdaX7Tzo9aYHa3nLzCgnektDfWg_ARRd9WuLaO4oTmMzZoLh3b3m07ii9IdXzk4-LcFb2aApayly4CWBwJ6y4FrIfJfNeKidZd3AOq-p9Twl6qfvW"/>
+<button class="absolute bottom-3 right-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform" onclick="event.stopPropagation();">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-lg">Sweet Peaches</h4>
+<p class="font-body text-on-surface-variant text-xs mb-2">4 Pack</p>
+<div class="flex justify-between items-center">
+<span class="font-headline font-extrabold text-primary">$7.20</span>
+</div>
+</div>
+</div>
+
+<div class="group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Fresh gala apples" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJSt9g07JbnuYz2ZkMz1EDu4n7EhISry17HPXNVZGuDrOYqiZkqmvbGzhzkR3drf_Y5AYFkDoA6x-Up0HL9q0W6evgxSl1n-tb24EdEVPHjlM2vJuKPbF9R85gAmgbaAMUjHaWBCtKzz22PVAVlehbT-4QuMkXVkRQbVK5wYOojcktFAbW0GWsVSjFKzLM30JBlXrO1_38xbJkI9UxCpv9Tf6TXcdWZk6BXZNWyK_L82SmQS0F82IX585kvgcbrUdY1YUeeQHZL3ON"/>
+<button class="absolute bottom-3 right-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-transform" onclick="event.stopPropagation();">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+<div class="absolute top-3 left-3 px-2 py-1 bg-tertiary-container text-on-tertiary-container text-[9px] font-bold uppercase tracking-widest rounded-sm">Orchard Picked</div>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-lg">Gala Apples</h4>
+<p class="font-body text-on-surface-variant text-xs mb-2">1kg Bag</p>
+<div class="flex justify-between items-center">
+<span class="font-headline font-extrabold text-primary">$4.80</span>
+</div>
+</div>
+</div>
+
+</div>
+<div class="mt-8 flex justify-center">
+<button class="px-6 py-3 rounded-full border border-outline-variant text-on-surface-variant font-label text-sm font-semibold tracking-wide hover:bg-surface-container transition-colors">Load more</button>
+</div>
+</section>
+<section class="mb-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+<div class="md:col-span-7 aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-xl bg-surface-container-low relative group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of vibrant purple kale and organic spinach leaves with soft morning dew and cinematic natural side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf6LX_oJ_h226Q0q-po3IkhM2vBQlF_aiZ2R7EMp3D_MfeW4pLEjZwr-GNJmkyq9LYM-gFSIo6QUijyGgG5WEIA5kzeBOeAlPMxDNdChyAecj8eIObqMVu9QSUGKB2JBHe5tlQwRYT_5l_ASthMakdWYuBAk5gkz7bjmSnsp9mxFy7YTTUy8omiJDXdOJ0N10mNVmBEuWizEWBY1EOu57PLIfmEje1lNRuGxuLHkoEJ9SKhwMn0azHsL7TPOOJLR8HPfRP0f1pKbuY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex flex-col justify-end p-8">
+<span class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold tracking-[0.2em] uppercase rounded-sm w-fit mb-3">Seasonal Pick</span>
+<h2 class="font-headline text-3xl md:text-5xl font-extrabold text-white leading-tight mb-2">Winter Harvest <br/>Emerald Greens</h2>
+<p class="text-white/90 font-body text-sm md:text-base max-w-md">Sourced from the mist-covered valleys of our partner farms this morning.</p>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col gap-6">
+<div class="aspect-[16/9] md:aspect-[4/3] rounded-xl bg-surface-container-high overflow-hidden relative group cursor-pointer" onclick="window.location.href='/detail_product.html'">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Artistic arrangement of heirloom carrots in various colors on a rustic wooden table with bright afternoon sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWBcvi-TXTz2d5aNCizG6lOuplgI1H4BBFcmeqcE1bBL9pZcvzAsUbWWUAmknSD7eSBeKYPRmpE3Tpdttmine8HvbLNPKQ8cD4G39d523I70sPzNbGxDfnnADKn_nr0IBsUBMq9bj5OwCbZWMkRxien_Nu7MU2p2ZXGZMBb24Q_aHVQ9u8R7m-NuC1o6dYFr0BqkPAKcsxGK3r8LRB7yVwSKMUjDJlZMcnt5FqgEe4hP6L66M3aTPhhBgRr-Qq7XjUumY_mAX9u9xx"/>
+<div class="absolute bottom-6 left-6 right-6">
+<h3 class="font-headline text-xl font-bold text-white drop-shadow-md">Rainbow Root Selection</h3>
+</div>
+</div>
+<div class="p-8 bg-secondary-container rounded-xl flex flex-col justify-center">
+<h4 class="font-headline text-2xl font-bold text-on-secondary-container mb-2">The Earthy Editorial</h4>
+<p class="font-body text-on-secondary-fixed-variant text-sm mb-4 leading-relaxed">Discover our weekly curation of artisanal produce and the stories of the soil they grew in.</p>
+<a class="text-primary font-bold text-sm border-b-2 border-primary-container inline-flex items-center gap-2 w-fit" href="#">Read the Issue <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-6 bg-[#f9f9f7] rounded-t-[24px] z-50 shadow-[0_-4px_32px_rgba(28,109,37,0.06)]">
+<div class="flex flex-col items-center justify-center bg-[#eaffe2] text-[#1c6d25] rounded-full px-5 py-1.5 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">potted_plant</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-0.5">Market</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#5c605b] opacity-70 hover:opacity-100 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">local_florist</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-0.5">Garden</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#5c605b] opacity-70 hover:opacity-100 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-0.5">Cart</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#5c605b] opacity-70 hover:opacity-100 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-0.5">Profile</span>
+</div>
+</nav>
+</body></html>
